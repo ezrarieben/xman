@@ -1,0 +1,38 @@
+a {
+  & {
+    color: $green;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $green;
+    text-decoration: underline;
+  }
+}
+
+.field-split {
+  & {
+    margin: 0.5rem 0;
+    border-top: 0.1rem solid $green;
+  }
+
+  legend {
+    width: auto;
+    background-color: $white;
+    padding: 0 1rem 0 0;
+    margin-bottom: 1rem;
+  }
+}
+
+main {
+  padding-top: 5rem;
+}
+
+code {
+  overflow-y: scroll;
+  display: block;
+  height: 300px;
+  background-color: $darkgrey;
+  padding: 15px;
+  color: $green;
+}

@@ -1,0 +1,67 @@
+.header {
+  & {
+    z-index: 15;
+    height: 4rem;
+  }
+
+  .logo {
+    & {
+      font-size: 2rem;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    .sub {
+      & {
+        font-size: 0.7rem;
+      }
+
+      .link {
+        & {
+          color: $white;
+        }
+
+        &:hover {
+          color: inherit;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+ul.nav {
+  & {
+    margin: 0;
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+  }
+
+  li {
+    & {
+      list-style-type: none;
+      display: inline-block;
+      height: 100%;
+    }
+
+    a {
+      & {
+        display: block;
+        height: 100%;
+        color: $white;
+        font-size: 0.9rem;
+        padding: 1.2rem;
+        border-bottom: 0.2rem solid $grey;
+        transition: .1s all;
+      }
+
+      &:hover {
+        background-color: $darkgrey;
+        text-decoration: none;
+        border-color: $green;
+      }
+    }
+  }
+}

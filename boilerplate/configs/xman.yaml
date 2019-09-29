@@ -1,0 +1,9 @@
+xman:
+  date_format: "%Y-%m-%d %T"
+  bcrypt_cost: 12
+  modx_downloads_path: "/../downloads/modx/"
+  instances:
+    list_limit: 100
+  clients:
+    connector_path: "assets/components/xman/connectors/connector.php"
+    manager_path: "manager/"

@@ -1,0 +1,75 @@
+.btn-green {
+  & {
+    background-color: $green;
+    background-image: linear-gradient($green, $darkgreen);
+  }
+
+  &:hover {
+    background-color: darken($green, 5%);
+    background-image: linear-gradient(darken($green, 5%), darken($darkgreen, 5%));
+  }
+}
+
+.btn-red {
+  & {
+    background-color: $red;
+  }
+
+  &:hover {
+    background-color: darken($red, 10%);
+  }
+}
+
+.btn-grey {
+  & {
+    background-color: $grey;
+    color: $white;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: darken($grey, 5%);
+  }
+}
+
+.dropdown-green {
+  .btn.dropdown-toggle {
+    background-color: $green;
+    background-image: linear-gradient($green, $darkgreen);
+
+    &:hover {
+      background-color: darken($green, 5%);
+      background-image: linear-gradient(darken($green, 5%), darken($darkgreen, 5%));
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .dropdown-menu {
+    & {
+      padding: 0;
+      background-color: $darkgrey;
+    }
+
+    .dropdown-divider {
+      margin: 0;
+      border-color: $grey;
+    }
+
+    .dropdown-item {
+      & {
+        color: $white;
+        transition: .2s all;
+        border-left: 0.1rem solid $darkgrey;
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $darkgrey;
+        border-left: 0.4rem solid $green;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// Define color classes
+$black: #000;
+$white: #fff;
+$grey: #424242;
+$darkgrey: #313131;
+$green: #32ab9a;
+$darkgreen: #00948e;
+$red: #dc3545;
+
+$colors: (
+  'black': $black,
+  'white': $white,
+  'grey': $grey,
+  'darkgrey': $darkgrey,
+  'darkgreen': $darkgreen,
+  'green': $green,
+  'red': $red,
+);
+
+@each $name, $color in $colors {
+  .-c#{$name} {
+    color: #{$color};
+  }
+
+  .-bg#{$name} {
+    background-color: #{$color};
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "ezrarieben/xman",
+    "type": "library",
+    "description": "Manage, administer and update your MODX installations with one control panel",
+    "keywords": ["MODX", "XMAN", "xman", "XMan"],
+    "homepage": "https://github.com/ezrarieben/xman",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ezra Rieben",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+    	"mzdr/micro": "^2.1"
+    },
+    "autoload": {
+	"files": ["xman.php"]
+    }
+}
