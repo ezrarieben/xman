@@ -103,7 +103,7 @@ function downloadCurrentModxVersion(): Bool
 
     $downloadUrl = "https://modx.s3.amazonaws.com/releases/{$version}.{$major}.{$minor}/modx-{$version}.{$major}.{$minor}-pl-advanced.zip";
 
-    $docRoot = preg_replace("!${_SERVER['SCRIPT_NAME']}$!", '', $_SERVER['SCRIPT_FILENAME']);
+    $docRoot = $_SERVER['DOCUMENT_ROOT'];
     $targetPath = $docRoot. config()->get('xman.modx_downloads_path');
     $filename = $currentVersionName . '.zip';
     $targetZipFile = $targetPath . $filename;
@@ -170,7 +170,7 @@ function getCurrentModxVersionDownload()
   $major = $versionLevels[1];
   $minor = $versionLevels[2];
 
-  $docRoot = preg_replace("!${_SERVER['SCRIPT_NAME']}$!", '', $_SERVER['SCRIPT_FILENAME']);
+  $docRoot = $_SERVER['DOCUMENT_ROOT'];
   $targetPath = $docRoot. config()->get('xman.modx_downloads_path');
   $filename = $currentVersionName . '.zip';
   $targetZipFile = $targetPath . $filename;
